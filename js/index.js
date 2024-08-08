@@ -64,6 +64,7 @@ async function getCursOnDate(dateTime) {
 
   const headers = {
     "Content-Type": "application/soap+xml; charset=utf-8",
+    "Access-Control-Allow-Origin": "*"
   };
 
   try {
