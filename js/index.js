@@ -73,6 +73,8 @@ async function getCursOnDate(dateTime) {
       body: soapRequest,
     });
 
+    const responseText = await response.text();
+    console.log(responseText)
     if (response.ok) {
       const responseText = await response.text();
       const parser = new DOMParser();
